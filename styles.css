@@ -1,94 +1,109 @@
-/* Tipografía y colores base */
-body {
+/* ====== Reset general ====== */
+* {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  background-color: white;
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FFFFFF;   /* fondo blanco */
+  color: #000000;              /* texto negro */
+  line-height: 1.6;
+}
+
+/* ====== Header ====== */
 header {
-  background: #0a3d62;
-  color: white;
-  padding: 1rem 2rem;
+  background-color: #000000;   /* negro */
+  color: #FFFFFF;              /* texto blanco */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 20px;
 }
 
 nav a {
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
   font-weight: bold;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #777777; /* gris medio */
 }
 
-/* Portada */
+/* ====== Hero (portada) ====== */
 .hero {
-  background: black no-repeat center center/cover;
-  color: white;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 4rem 2rem;
+  background-color: #EEEEEE; /* gris claro */
+  color: #000000;
+  padding: 20px;
 }
 
 .hero h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  margin-bottom: 15px;
 }
 
-.logo {
-  height: 60px;   /* ajusta según el tamaño */
-  margin-right: 10px;
-  vertical-align: middle;
-}
-header {
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
 }
 
-
-.content {
-  padding: 2rem;
-  max-width: 900px;
-  margin: auto;
+/* ====== Secciones ====== */
+section {
+  padding: 60px 20px;
+  text-align: center;
 }
 
-.content h2 {
-  color: #0a3d62;
-  margin-bottom: 1rem;
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #000000;
+  display: inline-block;
+  padding-bottom: 5px;
 }
 
-.social {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  padding: 0;
+section p {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-.social a {
-  color: #0a3d62;
-  font-weight: bold;
+/* ====== Footer ====== */
+footer {
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #FFFFFF;
+  margin: 0 10px;
   text-decoration: none;
 }
 
-footer {
-  background: #333;
-  color: #ddd;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+footer a:hover {
+  color: #777777;
 }
+
