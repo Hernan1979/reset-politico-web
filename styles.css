@@ -39,7 +39,7 @@ nav a:hover {
 
 /* Portada */
 .hero {
-  background: linear-gradient(rgba(10, 61, 98, 0.8), rgba(10, 61, 98, 0.8)), url('hero.jpg') no-repeat center center/cover;
+  background: black no-repeat center center/cover;
   color: white;
   text-align: center;
   padding: 4rem 2rem;
