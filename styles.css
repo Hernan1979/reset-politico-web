@@ -1,0 +1,82 @@
+/* Tipografía y colores base */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+header {
+  background: #0a3d62;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Portada */
+.hero {
+  background: linear-gradient(rgba(10, 61, 98, 0.8), rgba(10, 61, 98, 0.8)), url('hero.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.content {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.content h2 {
+  color: #0a3d62;
+  margin-bottom: 1rem;
+}
+
+.social {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+
+.social a {
+  color: #0a3d62;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer {
+  background: #333;
+  color: #ddd;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
