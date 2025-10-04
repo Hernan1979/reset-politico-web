@@ -13,6 +13,17 @@ body {
 }
 
 /* ====== Header ====== */
+.logo {
+  height: 60px;   /* ajusta según el tamaño */
+  margin-right: 10px;
+  vertical-align: middle;
+}
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
 header {
   background-color: #000000;   /* negro */
   color: #FFFFFF;              /* texto blanco */
